@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table表格標籤練習</title>
+  </head>
+  <body>
+    <h1>TABLE表格</h1>
+    <table border="1" width="1000">
+      <!--caption標籤'表格標題-->
+      <caption>
+        三年甲班通訊錄
+      </caption>
+      <tr>
+        <!-- th表頭 -->
+        <th>姓名</th>
+        <th>性別</th>
+        <th>年齡</th>
+        <th>居住地</th>
+      </tr>
+      <tr>
+        <td>AMY</td>
+        <td>女</td>
+        <td>18</td>
+        <td>美國</td>
+      </tr>
+      <tr>
+        <td>BRAIN</td>
+        <td>男</td>
+        <td>18</td>
+        <td>英國</td>
+      </tr>
+      <tr>
+        <td>JASON</td>
+        <td>男</td>
+        <td>20</td>
+        <td>泰國</td>
+      </tr>
+    </table>
+    <h2>表格跨列練習</h2>
+    <table border="1" width="800">
+      <!--caption標籤'表格標題-->
+      <caption>
+        三年甲班通訊錄
+      </caption>
+      <tr>
+        <!-- th表頭 -->
+        <th>姓名</th>
+        <th>性別</th>
+        <th>年齡</th>
+        <th>居住地</th>
+      </tr>
+      <tr>
+        <td rowspan="3">AMY<br />BRAIN<br />JASON</td>
+        <td>女</td>
+        <td rowspan="2">18</td>
+        <td>美國</td>
+      </tr>
+      <tr>
+        <!--rowspan屬性跨行、跨幾行-->
+        <td rowspan="2">男</td>
+        <td>英國</td>
+      </tr>
+      <tr>
+        <!--colspan屬性跨列、跨幾列-->
+        <td colspan="2">20、泰國</td>
+      </tr>
+    </table>
+
+    <h2>實戰table</h2>
+
+    <table border="1" width="1000" height="400">
+      <caption>
+        部門個人信息登記表
+      </caption>
+      <tr>
+        <th colspan="8">保險小舖推展辦公室</th>
+      </tr>
+      <tr>
+        <th colspan="8">部室資料</th>
+      </tr>
+      <tr>
+        <td>姓名</td>
+        <td>博</td>
+        <td>員工編號</td>
+        <td>EK4187</td>
+        <td>公司分機</td>
+        <td>2389-5858#1821</td>
+        <td>公司信箱</td>
+        <td>Skek4187@.skl.com.tw</td>
+      </tr>
+      <tr>
+        <td>性別</td>
+        <td>男</td>
+        <td>婚姻</td>
+        <td>未婚</td>
+        <td>英文名</td>
+        <td>Brian</td>
+        <td>年資</td>
+        <td>6年</td>
+      </tr>
+      <tr>
+        <td>出生地</td>
+        <td>台北</td>
+        <td>戶籍</td>
+        <td>新北</td>
+        <td>身高</td>
+        <td>174</td>
+        <td>體重</td>
+        <td>62</td>
+      </tr>
+      <tr>
+        <td>身分證字號</td>
+        <td colspan="3">12345678</td>
+        <td>駕照</td>
+        <td colspan="3">汽機車</td>
+      </tr>
+      <tr>
+        <th colspan="8">個人聯繫資訊</th>
+      </tr>
+      <tr>
+        <td>地址</td>
+        <td colspan="7"></td>
+      </tr>
+      <tr>
+        <td>家地址</td>
+        <td colspan="7"></td>
+      </tr>
+      <tr>
+        <td>聯繫電話</td>
+        <td colspan="7"></td>
+      </tr>
+      <tr>
+        <td>信箱</td>
+        <td colspan="7"></td>
+      </tr>
+    </table>
+  </body>
+</html>

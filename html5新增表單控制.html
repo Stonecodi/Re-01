@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5新增表單控件</title>
+  </head>
+  <body>
+    <h1>HTML5新增表單控制</h1>
+    <form>
+      <p>
+        顏色選擇:
+        <input type="color" />
+      </p>
+      <p>
+        設定日期:
+        <input type="date" name="" id="" />
+      </p>
+      <p>
+        時間
+        <input type="time" />
+      </p>
+
+      <p>EMAIL <input type="email" /></p>
+      <p>
+        必填寫
+        <input type="text" required />
+      </p>
+      <p>
+        數字:
+        <input type="number" min="2" max="11" />
+      </p>
+      <p>
+        <input type="range" min="1" max="100" />
+      </p>
+      <p>
+        搜索框
+        <input type="search" />
+      </p>
+      <p>
+        url
+        <input type="url" />
+      </p>
+      <p>
+        <input type="submit" value="提交" />
+      </p>
+      <p>
+        <input type="datetime-local" />
+      </p>
+      <p>
+        datalist控件 
+        <!--datalist打一個關鍵字會提示有關鍵字的詞庫-->
+        <input type="text" list="language-list" />
+        <datalist id="language-list">
+        <option value="台灣">台灣</option>
+        <option value="台北">台北</option>
+        <option value="新北">新北</option>
+        <option value="新竹">新竹</option>
+      </p>
+    </form>
+  </body>
+</html>

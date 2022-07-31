@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form表單標籤練習</title>
+  </head>
+  <body>
+    <h1>form表單</h1>
+
+    <p>蒐集客戶資料:登錄、註冊、發佈、送出等</p>
+    <form action="/user" method="post">
+      <!--placeholder 灰色提示字樣-->
+      <p>
+        用戶名: <input type="text" name="username" placeholder="請輸入用戶名" />
+      </p>
+      <!--value預設值-->
+      <p>姓名: <input type="text" value="貴賓" /></p>
+      <!--disable是禁止更改-->
+      <p>地址: <input type="text" name="adress" value="台灣新北" disabled /></p>
+      <!--type : password 密碼 預設隱藏-->
+      <p>密碼: <input type="password" name="password /></p>
+
+      <p>
+        <!--HTML5都用label標籤)屬性name定義為同樣的值，就變成只能單選
+        checked屬性是默認選項
+        -->
+        性別:
+        <label><input type="radio" name="sex" /> 男</label>
+        <input type="radio" name="sex" /> 女
+        <input type="radio" name="sex" checked /> 不告訴逆雷
+      </p>
+
+      <p>
+        興趣:<br /><br />
+
+        <label><input type="checkbox" name="hobby" /> 衝浪</label>
+        <label><input type="checkbox" name="hobby" /> 游泳</label>
+        <label><input type="checkbox" name="hobby" /> 浮潛</label>
+      </p>
+
+      <p>
+        請選擇你的職業:<br /><br />
+        職業:
+        <select>
+          <option value="魔法師">魔法師</option>
+          <option value="小流氓">小流氓</option>
+          <option value="小廢物">小廢物</option>
+        </select>
+        等級:
+        <select>
+          <option value="一階">一階</option>
+          <option value="二階">二階</option>
+          <option value="三階">三階</option>
+        </select>
+      </p>
+      <!--textarea多行文本欄-->
+      <p>
+        亞中酸民評論 :<br />
+
+        <textarea cols="100" rows="10"></textarea>
+        <button>按鈕</button>
+        <input type="button" value="TAP" />
+        <input type="submit" value="表單送出" />
+      </p>
+      <p>
+        重置按鈕:
+        <br />
+        <input type="reset" value="重置" />
+      </p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>語義化標籤練習</title>
+  </head>
+  <body>
+    <h1>語義化標籤</h1>
+    <h2>span標籤</h2>
+    <p>
+      &lt;span&gt;標籤是文本中的區塊標籤，沒有任何顯示效果，
+      可以結合CSS來定位區塊的樣式
+    </p>
+    <p>商品價格:<span>588</span>元 , 優惠價:<span>298</span>元</p>
+
+    <h2>文本格式化標籤</h2>
+    b標籤:<b>粗體</b><br /><br />
+    em標籤:<em>表示被強調</em> <br /><br />
+    i標籤:<i>斜體</i><br /><br />
+    u標籤:<u>這是底線</u><br /><br />
+    <!--strong也是粗體的效果-->
+    strong標籤:<strong>加重語氣，表示特別重要的文本(SEO優化很重要)</strong>
+    del標籤:<del>顯示刪除文字</del><br /><br />
+    <!--常聽到的把這段mark起來(預設黃底)-->
+    mark標籤:<mark>同英譯標記文字</mark>
+    <h3>sub標籤</h3>
+    <!--下標籤-->
+    <p>C+O<sub>2</sub>=CO<sub>2</sub></p>
+
+    <h3>sup標籤</h3>
+    <!--上標籤(次方)-->
+    <p>2<sup>3</sup>+3<sup>2</sup>=17</p>
+
+    <h3>pre 預設格式文字</h3>
+    <pre>
+        定 義 預 設 格 式
+
+        在pre標籤中的文本通常會保留空格及換行符號。
+        
+        而文本會呈現寬體，常見應用就是表示計算機的源代碼。
+    
+    </pre>
+
+    <h3>figure , figcaption標籤</h3>
+
+    <p>
+      代表一段獨立出來的內容，與說明figcaption標籤搭配使用
+      figure標籤規定獨立的流內容(圖片,圖表,照片,代碼等)。
+    </p>
+
+    <div>
+      <figure>
+        <img src="../../images/2.webp" alt="" height="300 " />
+        <figcaption>長腿妹妹</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
